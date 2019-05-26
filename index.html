@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>XOR NN</title>
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis"></script>
+<link href="style.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>XOR Function </h1>
+
+<p class="section-head">Description</p>
+<p>
+This example lets you train a XOR Function using a Fully Connected Neural Network (also known as a DenseNet). 
+</p>
+
+<p class="section-head">Training Parameters</p>
+<div>
+<label># of training epochs:</label>
+<input id="train-epochs" value="200">
+</div>
+<button id="btn">Train Model</button>
+<div id="status"></div>
+
+<p class="section-head">Training Progress</p>
+
+<div id="loss-label">
+<div id="root"></div>
+</div>
+
+<div id="accuracy-label">
+<div id="root2"></div>
+</div>
+
+
+<p class="section-head">Inference Examples</p>
+
+<div id="results"></div>
+<script src="xor.js"></script>
+</body>
+</html>
